@@ -1,5 +1,4 @@
-# Web
-InicioProjetoEmCss&amp;Html
+#WEB
 Resumo do Projeto: Site de Ensino de Java Básico
 
 Este projeto consiste na criação de um site dedicado ao ensino de Java básico, oferecendo uma variedade de ferramentas educacionais exclusivamente desenvolvidas com HTML e CSS. O objetivo principal é fornecer aos iniciantes uma plataforma abrangente e acessível para aprender os fundamentos da linguagem de programação Java sem a necessidade de JavaScript.
