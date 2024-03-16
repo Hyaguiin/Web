@@ -1,0 +1,78 @@
+.formulario{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    h2{
+        text-align: center;
+    }
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    
+    form {
+        display: flex; 
+        flex-direction: column;
+        align-items: center; 
+        width: 100%;
+    }
+    
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10px 45px;
+        background-color: rgb(83, 94, 211);
+        width: 500px;
+        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    }
+    
+    section h1 {
+        color: rgb(238, 238, 238);
+        margin: 2rem;
+    }
+    
+    section form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    form label {
+        color: aliceblue;
+        font-size: 19;
+        margin-bottom: 4px;
+    }
+    
+    form input {
+        padding: 15px;
+        outline: none;
+        border: 0;
+        margin-bottom: 15px;
+        transition: all 0.5s; 
+        border-radius: 10px; 
+    }
+    
+    form input:focus {
+        border-radius: 16px; 
+    }
+    
+    form textarea {
+        padding: 28px;
+        outline: none;
+        border: 0;
+        margin-bottom: 30px;
+        transition: all 0.5s; 
+    }
+    
+    form textarea:focus {
+        border-radius: 10px;
+    }
+    
+}
+  
+ 
