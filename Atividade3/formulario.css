@@ -1,78 +1,78 @@
-.formulario{
+/* Reset CSS */
+* {
     margin: 0;
-    padding: 0%;
+    padding: 0;
     box-sizing: border-box;
-    h2{
-        text-align: center;
-    }
-    body {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        min-height: 100vh;
-    }
-    
-    
-    form {
-        display: flex; 
-        flex-direction: column;
-        align-items: center; 
-        width: 100%;
-    }
-    
-    section {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        padding: 10px 45px;
-        background-color: rgb(83, 94, 211);
-        width: 500px;
-        box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-    }
-    
-    section h1 {
-        color: rgb(238, 238, 238);
-        margin: 2rem;
-    }
-    
-    section form {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-    
-    form label {
-        color: aliceblue;
-        font-size: 19;
-        margin-bottom: 4px;
-    }
-    
-    form input {
-        padding: 15px;
-        outline: none;
-        border: 0;
-        margin-bottom: 15px;
-        transition: all 0.5s; 
-        border-radius: 10px; 
-    }
-    
-    form input:focus {
-        border-radius: 16px; 
-    }
-    
-    form textarea {
-        padding: 28px;
-        outline: none;
-        border: 0;
-        margin-bottom: 30px;
-        transition: all 0.5s; 
-    }
-    
-    form textarea:focus {
-        border-radius: 10px;
-    }
-    
 }
-  
- 
+
+/* Formulário */
+.formulario {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.formulario h2 {
+    text-align: center;
+}
+
+.formulario body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.formulario form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%; /* Ajuste de largura para telas menores */
+    max-width: 500px; /* Largura máxima do formulário */
+    margin: 0 auto; /* Centraliza o formulário na tela */
+}
+
+.formulario section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgb(83, 94, 211);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.formulario section h1 {
+    color: rgb(238, 238, 238);
+    margin: 2rem 0;
+}
+
+.formulario form label {
+    color: aliceblue;
+    font-size: 19px;
+    margin-bottom: 4px;
+}
+
+.formulario form input,
+.formulario form textarea {
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 15px;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.formulario form input:focus,
+.formulario form textarea:focus {
+    border-radius: 16px;
+}
+
+/* Ajuste para telas menores */
+@media only screen and (max-width: 768px) {
+    .formulario form {
+        width: 90%; /* Ajusta a largura do formulário para telas menores */
+    }
+}
