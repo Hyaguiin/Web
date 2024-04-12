@@ -15,21 +15,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menumobile.css">
+    <script defer src="menu.js"></script>
 </head>
 
 <body>
     <div id="linha-vertical"></div>
 
     <div id="bannerimage">
-        <header>
+        <header class="header">
             <div class="container">
                 <div class="links">
-                    <nav>
+                    <nav class="nav">
                         <div class="logo">
                             <a href="index.html"></a>
                             <img src="https://cdn-icons-png.flaticon.com/512/1865/1865273.png" alt="logo" width="40">
                         </div>
-                        <ul>
+                        <button class="hamburger"></button>
+                        <ul class="nav-list">
                             <li><a href="index.html">Página Inicial</a></li>
                             <li><a href="sobre.html">Sobre Nós</a></li>
                             <li class="dropdown">
@@ -102,12 +105,27 @@
             <form action="https://api.staticforms.xyz/submit" method="post">
                 <section>
                     <h1>CONTATO</h1>
-                    <label>Nome:</label>
-                    <input type="text" name="name" placeholder="Seu Nome" required>
-                    <label>Email:</label>
-                    <input type="text" name="email" placeholder="Seu Nome" required/>
-                    <label>Mensagem:</label>
-                    <textarea name="message" placeholder="Digite sua mensagem"></textarea>
+                    <div class="label-control">
+                        <label>Nome:</label>
+                    </div>
+                    <div class="input-control">
+                        <input type="text" name="name" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="label-control">
+                        <label>Email:</label>
+
+                    </div>
+                    <div class="input-control">
+                        <input type="text" name="email" placeholder="Seu Nome" required/>
+
+                    </div>
+                    <div class="label-control">
+                        <label>Mensagem:</label>
+                    </div>
+                    <div class="textarea-control">
+                        <textarea name="message" placeholder="Digite sua mensagem"></textarea>
+                    </div>
+
                     <input type="submit" value="Enviar" />
                     <input type="hidden" name="redirectTo" value="contatofinalizado.html">
                     <input type="hidden" name="accessKey" value="bf6a25bd-ddd2-4487-91e0-a4fb8f5fa7db">
@@ -115,22 +133,8 @@
             </form>
         </div>
     </div>
-    <footer>
-        <header>
-            <div class="container">
-                <div class="links">
-                    <nav>
-                        <div class="logo">
-                            <a href="index.html"></a>
-                            <img src="https://cdn-icons-png.flaticon.com/512/1865/1865273.png" alt="logo" width="40">                            
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
 
-    </footer>
-
+   
 </body>
 
 </html>
